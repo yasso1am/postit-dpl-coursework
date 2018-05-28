@@ -2,12 +2,12 @@
 
 one:
   title: MyString
-  date: MyString
+  date: 2018-05-28
   body: MyText
   completed: false
 
 two:
   title: MyString
-  date: MyString
+  date: 2018-05-28
   body: MyText
   completed: false
