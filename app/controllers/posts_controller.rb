@@ -22,11 +22,18 @@ class PostsController < ApplicationController
   end
 
 
-  def view
+  def edit
     @post = Post.find(params[:id])
   end
   
   def update 
+    @post = Post.find(params[:id])
+
+    if @post.update(posts_params)
+      redirect_to posts_path
+    else
+      render :edit
+    end
   end
 
     private
