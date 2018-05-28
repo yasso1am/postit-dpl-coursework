@@ -1,3 +1,4 @@
+
 <%= form_for @post do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
@@ -7,9 +8,11 @@
 
   <%= f.label :body %>
   <%= f.text_area :body %>
-
-  <%= f.label :completed %>
-  <%= f.text_field :completed %>
   
+  <%= f.label :completed, 'Complete', :value => true %>
+  <%= f.radio_button :completed, true %>
+  <%= f.label :completed, 'Incomplete', :value => false %>
+  <%= f.radio_button :completed, false %>
   <%= f.submit %>
+
 <% end %>
