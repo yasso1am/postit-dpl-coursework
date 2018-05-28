@@ -17,16 +17,22 @@
  @import "bulma";
 
 body {
-  margin: 50px;
-  padding: 50px;
+  margin: 25px 50px;
+  padding: 25px;
 }
 
 .navbar {
-  margin: 50px;
+  margin: 20px;
 }
 
 h1 {
   text-align: center;
+  font-size: 44px;
+}
+
+h3 {
+  text-align: justify;
   font-size: 36px;
+  text-decoration: underline;
 }
 
